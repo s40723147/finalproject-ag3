@@ -21,18 +21,15 @@
 <v t="leo.20180827201621.6" a="E"><vh>body</vh>
 <v t="leo.20180827201621.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180827201621.8" a="E"><vh>slides div</vh>
-<v t="leo.20180827201621.9"><vh>封面投影片</vh>
+<v t="leo.20180827201621.9" a="E"><vh>封面投影片</vh>
 <v t="leo.20180827201621.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180827201621.11"><vh>期末報告主題</vh>
-<v t="leo.20180827201621.12"><vh>報告主題</vh></v>
+<v t="leo.20180827201621.11" a="E"><vh>期末報告主題</vh>
+<v t="leo.20180827201621.12"><vh>目錄</vh></v>
 </v>
-<v t="leo.20180827201621.13"><vh>從無到有</vh>
-<v t="leo.20180827201621.14"><vh>新增search box</vh>
+<v t="leo.20180827201621.13" a="E"><vh>從無到有</vh>
+<v t="leo.20180827201621.14" a="E"><vh>新增search box</vh>
 <v t="leo.20180827201621.15"><vh>新增search box內容</vh></v>
-</v>
-<v t="leo.20190104144602.2" a="E"><vh>Tipue資料</vh>
-<v t="leo.20190104144602.3"><vh>新增search box內容</vh></v>
 </v>
 <v t="leo.20180827201621.18" a="E"><vh>導入影片</vh>
 <v t="leo.20180827201621.19"><vh>iframe 導入影片</vh></v>
@@ -138,12 +135,14 @@ QLineEdit#editorLabel {
 <t tx="leo.20180827201556.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
 <t tx="leo.20180827201621.1"></t>
-<t tx="leo.20180827201621.10"># 2018Fall ag3 
-## 期末分組網際簡報
+<t tx="leo.20180827201621.10">## ag3期末分組網際簡報
 
-虎科大機械設計工程系
+ 將Tipue Search系統導入CMSimfly
 
-### [CMSimfly](https://mdecp2018.github.io/finalproject-ag3/content)
+
+
+
+Created by [ag3](https://mdecp2018.github.io/finalproject-ag3/content)
 
 </t>
 <t tx="leo.20180827201621.11">&lt;section data-markdown&gt;
@@ -155,13 +154,19 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20180827201621.12">## 在 CMSfly 增加 search 功能
+<t tx="leo.20180827201621.12">## 目錄
 
-一開始 CMSfly 沒有search功能
+* 何為[Tipue Search](http://www.tipue.com/search/)
 
-為了讓瀏覽網站能快速找到要的東西
+* 載入JavaScript
 
-所以才決定在靜態網站裡增加search的功能</t>
+* 建立搜尋列
+
+* 搜尋內容
+
+* 啟動Tipue Search
+
+</t>
 <t tx="leo.20180827201621.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -178,14 +183,11 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20180827201621.15"># 從無到有
-* 如何新增一個search box
+<t tx="leo.20180827201621.15"># Tipue Search
 
-* 先去找資料
+&lt;img src="../images/search box.JPG" width="300px"/&gt;
 
-* 我們在
-[Tipue](http://www.tipue.com/search/help/?d=1)
-那找到相關的資料</t>
+</t>
 <t tx="leo.20180827201621.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -308,25 +310,6 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20190104144602.2">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="leo.20190104144602.3"># Tipue
-* 如何新增一個search box
-
-* 先去找資料
-
-* 我們在
-[Tipue](http://www.tipue.com/search/help/?d=1)
-那找到相關的資料</t>
 <t tx="leo.20190104145649.1">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -351,7 +334,9 @@ vertical: body pane on the botton</t>
 
 * 我們在
 [Tipue](http://www.tipue.com/search/help/?d=1)
-那找到相關的資料</t>
+那找到相關的資料
+
+</t>
 <t tx="leo.20190104145649.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
