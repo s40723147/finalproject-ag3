@@ -14,11 +14,23 @@
 <p><span>如此一來便可以提升閱讀效率</span></p>
 <p><span>更可使閱讀更隨心所欲</span></p>
 <p><span><img alt="" height="133" src="/images/shutterstock_101971000-S.jpg" width="199"/></span></p>
-<p><span></span></p>
+<p><span>參考資料：<a href="http://www.tipue.com/search/help/?d=1">Tipuesearch</a>、 <a href="https://www.quora.com/How-can-I-extract-only-text-data-from-HTML-pages">Quora</a></span></p>
 <h1>Synopsis</h1>
 <p>CMSifly 在崁入 TinyMCE4 執行文字內容編輯的網際內容管理系統</p>
-<h3>Beautiful soup</h3>
-<p>Beautifulsoup 主要功能是把 HTML 或 XML 的文件提取到 Python 的程式庫</p>
+<h2>CMSimfly</h2>
+<p>CMSifly 是利用 Beatifulsoup4 對 config/content.html 進行分頁後，用 TinyMCE4 進行文字內容編輯，進行網際內容管理。 我們在近端內容管理系統裡面加入Tipuesearch 功能</p>
+<h2>Beautiful Soup</h2>
+<p>Beautifulsoup 主要功能是把 HTML 或 XML 的文件提取到 Python 的程式庫。它能夠通過你喜歡的轉換器實現慣用的文檔導航、查詢、修改檔案的方式。<span>Beautifulsoup</span><span>  可以提高你的工作效率。</span></p>
+<p><span>舉例：</span></p>
+<p>如果你的檔案在 Python 2.7 和 <span>Python 3.2 中執行，執行完的結果是一樣的。</span><span></span></p>
+<p><span>為什麼用 Beautiful Soup 可以提高效率?</span></p>
+<div><span>Beautiful Soup 對文檔的解析速度不會比它所依賴的解析器（</span><span> </span><span>html5lib 或 Python</span>）更快。如果對計算時間要求很高或需要較快的速度讀取檔案，那麽就應該直接使用  lxml </div>
+<div><span> </span></div>
+<div><span>換句話說,還有提高 Beautiful Soup 效率的辦法，就是使用 lxml 當作解析器。Beautiful Soup 用 lxml 做解析器比用 html5lib 或 Python 內置解析器速度快很多.</span></div>
+<div><span> </span></div>
+<div><span>安裝 cchardet 後文檔的解碼的編碼檢測會速度更快</span></div>
+<div><span> </span></div>
+<div><span>解析部分文檔不會節省多少解析時間，但是會節省很多記憶體的使用</span><span>，並且搜索時也會變得更快。</span></div>
 <p></p>
 <h2>TinyMCE4</h2>
 <p>TinyMCE4 是一個可以網路應用上的文字編輯器</p>
@@ -70,7 +82,8 @@
 <p><span>要下載 TinyMCE 並在本地</span><span>安裝</span><span>，“ </span><span>簡介和入門</span><span>指南” 中的“ 高級安裝選擇”頁面有說明。本文檔還提供了有關 TinyMCE 功能的信息，例如高級安裝選項，使用插件，學習內容過濾和拼寫檢查。</span></p>
 <p>資料來源 :  <a href="https://www.tiny.cloud/">TinyMCE</a></p>
 <h1>Report</h1>
-<p><a href="/downloads/Final Report.pdf">Final Report</a></p><h1>Final video</h1>
+<p><a href="/downloads/Final Report.pdf">Final Report</a></p>
+<h1>Final video</h1>
 <p>李冠廷(40723112)</p>
 <p><iframe allowfullscreen="allowfullscreen" height="196" src="//www.youtube.com/embed/2ZJKL5jEu6Y" width="350"></iframe></p>
 <p>林靖浩(40723120)</p>
@@ -269,4 +282,5 @@ doc["ex2"].bind('click', Ex2.prog)
 <p><!-- ***************************** slide ex2 end --></p>
 <p><!-- ***************************** slide ex3 start --></p>
 <p>
-<script type="text/python3"></script></p>
+<script type="text/python3"></script>
+</p>
