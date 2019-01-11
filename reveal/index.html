@@ -39,12 +39,14 @@
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-# 2018Fall ag3 
-## 期末分組網際簡報
+## ag3期末分組網際簡報
 
-虎科大機械設計工程系
+ 將Tipue Search系統導入CMSimfly
 
-### [CMSimfly](https://mdecp2018.github.io/finalproject-ag3/content)
+
+
+
+Created by [ag3](https://mdecp2018.github.io/finalproject-ag3/content)
 
     </script>
 </section>
@@ -53,13 +55,17 @@
 						
 <section data-markdown>
     <script type="text/template">
-## 在 CMSfly 增加 search 功能
+## 目錄
 
-一開始 CMSfly 沒有search功能
+* 何為[Tipue Search](http://www.tipue.com/search/)
 
-為了讓瀏覽網站能快速找到要的東西
+* 載入JavaScript
 
-所以才決定在靜態網站裡增加search的功能
+* 建立搜尋列
+
+* 搜尋內容
+
+* 啟動Tipue Search
 
     </script>
 </section>
@@ -70,32 +76,9 @@
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 從無到有
-* 如何新增一個search box
-
-* 先去找資料
-
-* 我們在
-[Tipue](http://www.tipue.com/search/help/?d=1)
-那找到相關的資料
-
-    </script>
-</section>
-
-
-
-						
-<section data-markdown>
-    <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-# Tipue
-* 如何新增一個search box
-
-* 先去找資料
-
-* 我們在
-[Tipue](http://www.tipue.com/search/help/?d=1)
-那找到相關的資料
+## Tipue Search
+</br>
+一種可用輸入關鍵字來搜尋網站中有其相關字元的功能
 
     </script>
 </section>
@@ -121,7 +104,9 @@
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## Quora
+## 載入JavaScript
+</br>
+<img src="../images/load JavaScript.JPG" width="600px"/>
     </script>
 </section>
 
@@ -191,6 +176,217 @@ make.start()
 <iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </script>
 </section>
+
+
+						
+</section>
+
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 建立搜尋列
+</br>
+設置一個可供輸入關鍵字的搜尋列
+
+
+
+<img src="../images/search box.JPG" width="300px"/>
+
+
+
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 建立搜尋列
+
+
+
+
+
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 利用 Markdown 寫投影片
+以下利用 Markdown 格式展示 Python 程式碼:
+```
+# use threading and subprocess to threading the make process
+import os
+import subprocess
+import threading
+
+def domake():
+    
+    path = "../exposed/api/exposed"
+    ubuntu = "../Ubuntu"
+    
+    # create obj path
+    
+    if not os.path.exists(path+"/../obj"):
+        os.makedirs(path+"/../obj")
+    
+    subprocess.call(["make", "clean"], cwd=path)
+    subprocess.call("make", cwd=path)
+    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
+    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
+    
+make = threading.Thread(target=domake)
+make.start()
+```
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+## 使用 iframe 導入影片
+
+### 導入影片 template
+
+<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+						
+</section>
+
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 搜尋內容
+
+輸入關鍵字之後會尋找此網站有此關鍵字的標題、內文，然後列出如圖
+
+
+<img src="../images/search result.JPG" width="600px"/>
+
+
+
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 建立搜尋列
+
+
+
+
+
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 利用 Markdown 寫投影片
+以下利用 Markdown 格式展示 Python 程式碼:
+```
+# use threading and subprocess to threading the make process
+import os
+import subprocess
+import threading
+
+def domake():
+    
+    path = "../exposed/api/exposed"
+    ubuntu = "../Ubuntu"
+    
+    # create obj path
+    
+    if not os.path.exists(path+"/../obj"):
+        os.makedirs(path+"/../obj")
+    
+    subprocess.call(["make", "clean"], cwd=path)
+    subprocess.call("make", cwd=path)
+    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
+    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
+    
+make = threading.Thread(target=domake)
+make.start()
+```
+    </script>
+</section>
+
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+## 使用 iframe 導入影片
+
+### 導入影片 template
+
+<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </script>
+</section>
+
+
+						
+</section>
+
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## 啟動Tipue Search
+</br>
+將此程式碼加入在結果頁面的末端</br>才能使此功能啟動
+
+
+
+<img src="../images/switch on.JPG" width="600px"/>
+
+
+
+    </script>
+</section>
+
+
+
+						
+</section>
+
+<section>
+<section data-markdown>
+    <script type="text/template">
+<!-- 請注意, @others 不可以內縮 -->
+## [Tipue Search Demo](http://www.tipue.com/search/demo/)
+</br>
+
+
+
+
+
+
+
+
+    </script>
+</section>
+
 
 
 						
